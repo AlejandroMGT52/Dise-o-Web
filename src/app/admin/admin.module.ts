@@ -12,7 +12,7 @@ import { ProductoService } from './inventario/services/producto.service';
 import { CardModule } from 'primeng/card';
 import { ImageModule } from 'primeng/image';
 import { ButtonModule } from 'primeng/button';
-import { ListaPedidoComponent } from './pedido/components/lista-pedido/lista-pedido.component';
+
 
 @NgModule({
   declarations: [
@@ -28,8 +28,7 @@ import { ListaPedidoComponent } from './pedido/components/lista-pedido/lista-ped
     InventarioModule,  // Este módulo ahora exporta CategoriaComponent
     CardModule,
     ImageModule,
-    ButtonModule,
-    ListaPedidoComponent
+    ButtonModule
   ],
   providers: [
     CategoriaService,
