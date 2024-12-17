@@ -1,0 +1,25 @@
+<div class="cards-container">
+    <p-card *ngFor="let card of cards">
+      <ng-template pTemplate="header">
+        <img [src]="card.imageUrl" [alt]="card.title" style="width: 100%; height: auto;">
+      </ng-template>
+      <ng-template pTemplate="title">
+        {{ card.title }}
+      </ng-template>
+      <ng-template pTemplate="subtitle">
+        {{ card.subtitle }}
+      </ng-template>
+      <ng-template pTemplate="content">
+        <p>{{ card.content }}</p>
+        <button 
+          pButton 
+          type="button" 
+          label="Ver Detalles" 
+          icon="pi pi-info-circle" 
+          (click)="onButtonClick(card.detailsUrl)">
+        </button>
+      </ng-template>
+    </p-card>
+  </div>
+  
+  

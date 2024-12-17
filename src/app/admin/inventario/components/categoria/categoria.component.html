@@ -1,0 +1,23 @@
+<div class="button-container">
+    <p-button label="3x3" (click)="generateMatrix(3)"></p-button>
+    <p-button label="4x4" (click)="generateMatrix(4)"></p-button>
+    <p-button label="5x5" (click)="generateMatrix(5)"></p-button>
+    <p-button label="6x6" (click)="generateMatrix(6)"></p-button>
+  </div>
+  
+  <!-- Tabla para mostrar la matriz generada -->
+  <p-table *ngIf="matrix.length > 0" [value]="matrix">
+    <ng-template pTemplate="header">
+      <tr>
+        <th *ngFor="let col of matrix[0]; let i = index">Columna {{ i + 1 }}</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-row let-rowIndex="rowIndex">
+      <tr>
+        <td *ngFor="let col of row" [ngClass]="{'highlight-cell': (rowIndex + 1) % 2 === 0, 'highlight-cell-odd': (rowIndex + 1) % 2 !== 0}">
+          {{ col }}
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+  

@@ -1,0 +1,93 @@
+/* Estilos generales para la página */
+:host {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f9; /* Color de fondo suave */
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Color de título */
+  }
+  
+  p-button {
+    margin: 5px; /* Espaciado entre los botones */
+  }
+  
+  /* Estilos para la tabla */
+  .p-table {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para la tabla */
+  }
+  
+  .p-table thead {
+    background-color: #007ad9; /* Color del encabezado */
+    color: white;
+  }
+  
+  .p-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Fila alterna en gris claro */
+  }
+  
+  .p-table tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* Fila alterna en blanco */
+  }
+  
+  .p-table td {
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ddd; /* Borde de las celdas */
+  }
+  
+  /* Estilos para las celdas */
+  .highlight-cell {
+    background-color: #e6f7ff; /* Color de fondo para celdas en filas pares */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Relieve */
+  }
+  
+  .highlight-cell-odd {
+    background-color: #fff4e6; /* Color de fondo para celdas en filas impares */
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5); /* Relieve */
+  }
+  
+  /* Estilos para los botones de tamaño de la matriz */
+  .p-button {
+    background-color: #007ad9; /* Color de fondo azul */
+    color: white; /* Color del texto */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .p-button:hover {
+    background-color: #005fa3; /* Color de fondo cuando se pasa el mouse */
+  }
+  
+  /* Estilo para la fila del encabezado de la tabla */
+  .p-table thead th {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* Contenedor de botones */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .button-container p-button {
+    margin: 0 10px; /* Espacio horizontal entre los botones */
+  }
+  

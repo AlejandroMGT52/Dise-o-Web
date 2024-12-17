@@ -1,0 +1,13 @@
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  p-card {
+    width: 300px;
+  }
+  

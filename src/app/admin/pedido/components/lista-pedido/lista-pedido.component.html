@@ -1,0 +1,31 @@
+<p-galleria
+  [value]="images"
+  [changeItemOnIndicatorHover]="true"
+  [numVisible]="5"
+  [circular]="true"
+  [showIndicators]="true"
+  styleClass="custom-gallery"
+>
+  <!-- Plantilla para la imagen principal -->
+  <ng-template pTemplate="item" let-item>
+    <div style="text-align: center;">
+      <img
+        [src]="item.source"
+        [alt]="item.alt"
+        style="width: 100%; border-radius: 8px;"
+      />
+      <h3 style="margin-top: 10px; font-size: 18px; color: #333;">
+        {{ item.title }}
+      </h3>
+    </div>
+  </ng-template>
+
+  <!-- Plantilla para los thumbnails (indicadores) -->
+  <ng-template pTemplate="thumbnail" let-item>
+    <img
+      [src]="item.thumbnail"
+      [alt]="item.alt"
+      style="border-radius: 5px;"
+    />
+  </ng-template>
+</p-galleria>

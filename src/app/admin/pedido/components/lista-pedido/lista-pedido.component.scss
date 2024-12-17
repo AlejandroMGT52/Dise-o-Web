@@ -1,0 +1,35 @@
+/* Centrar la galería */
+.custom-gallery {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  /* Ajustes a las imágenes grandes */
+  p-galleria img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover; /* Mantiene las proporciones */
+  }
+  
+  /* Ajustes a los thumbnails (indicadores) */
+  p-galleria .p-galleria-thumbnail img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.2s ease; /* Animación suave */
+  }
+  
+  p-galleria .p-galleria-thumbnail img:hover {
+    transform: scale(1.1); /* Zoom al pasar el mouse */
+    cursor: pointer;
+  }
+  
+  .custom-gallery h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
